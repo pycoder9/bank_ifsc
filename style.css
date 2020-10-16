@@ -1,0 +1,54 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.page{
+	width: 100vw;
+	height: 100vh;
+	/*background-color: #341f97;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper{
+	width: 400px;
+}
+
+.wrapper input,
+.wrapper button{
+	display: block;
+	width: 100%;
+
+}
+.wrapper input{
+	margin-bottom: 15px;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	border-bottom: 2px solid black;
+	text-align: center;
+	font-size: 25px;
+	color: #000;
+}
+.wrapper button{
+	padding: 10px 0;
+	font-size: 22px;
+	background-color: transparent;
+	color: #341f97;
+	border: none;
+	border-radius: 27px;
+	transition: 0.4s all;
+	outline:none;
+	/*color:white;*/
+
+}
+
+.wrapper input:focus,
+.wrapper button:focus{
+	outline: none;
+
+}	
+.wrapper button:hover{
+	transform: translateY(-5px);
+}

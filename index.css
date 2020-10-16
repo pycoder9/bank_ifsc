@@ -1,0 +1,10 @@
+.mt-5{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.tenor{
+	width: 150px;
+	height: 150px;
+	display: none;
+}

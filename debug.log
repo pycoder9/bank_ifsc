@@ -1,0 +1,2 @@
+[1016/182603.291:ERROR:file_io_win.cc(244)] SetEndOfFile: Access is denied. (0x5)
+[1016/182603.473:ERROR:file_io_win.cc(244)] SetEndOfFile: Access is denied. (0x5)
