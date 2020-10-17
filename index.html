@@ -10,6 +10,7 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 	<script type="" src="jquery.js"></script>
+	<script type="" src="custom.js"></script>
 	<script type="" src="popper.js"></script>
 	<script type="" src="bootstrap.js"></script>
 </head>
@@ -23,7 +24,7 @@
 		<div class="wrapper">
 		<input type="text" class="ifsc_class" id="ifsc_box" name="ifsc_box">
 		<button class="btn">Search!</button>
-		<div class="table-responsive" id="employee_details" style="">
+		<div class="table-responsive" id="employee_details" style="display:none">
 		<table class="table table-bordered">
  
     <tr>
@@ -66,47 +67,7 @@
 </div>
 		 </div></div>
 		</div>
-	<script>
-		jQuery(document).ready(function($) {
-			
-			$(".btn").click(function() {
-				var value1 = $(".ifsc_class").val();
-				console.log(value1);
-				$.ajax({
-					url: 'https://cors-anywhere.herokuapp.com/https://ifsc.razorpay.com/'+value1,
-					// url: 'https://ifsc.razorpay.com/SBIN0000021',
-					// url: 'http://ip-api.com/json',
-					type: 'GET',
-					dataType: 'JSON',
-					// data: 'value1',
-					success: function(result){
-						console.log(result);
-						$("#employee_details").css("display","block");
-						$('#name').text(result.BRANCH);
-						$('#district').text(result.DISTRICT);
-						$('#state').text(result.STATE);
-						$('#address').text(result.ADDRESS);
-						$('#contact').text(result.CONTACT);
-						$('#city').text(result.CITY);
-						$('#micr').text(result.MICR);
-						$('#bank').text(result.BANK);
-						$('#ifsc').text(result.IFSC);
-					}
-				})
-				.done(function() {
-					console.log("success");
-				})
-				.fail(function() {
-					console.log("error");
-				})
-				.always(function() {
-					console.log("complete");
-					$(".ifsc_class").val('')
-				});
-				
-			});
-		});
-	</script>
+	
 </body>
 </html>
 

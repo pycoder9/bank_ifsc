@@ -3,6 +3,7 @@
 	margin: 0;
 }
 .page{
+	/*margin-top: 25px;*/
 	width: 100vw;
 	height: 100vh;
 	/*background-color: #341f97;*/
@@ -11,9 +12,6 @@
 	align-items: center;
 }
 
-#mployee_details{
-	font-size: 50px;
-}
 
 .wrapper{
 	width: 400px;
