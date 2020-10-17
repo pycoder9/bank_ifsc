@@ -1,5 +1,10 @@
 
 		jQuery(document).ready(function($) {
+			$("#ifsc_box").click(function() {
+				$("#employee_details").css("display","none");
+			});
+
+
 			
 			$(".btn").click(function() {
 				var value1 = $(".ifsc_class").val();
