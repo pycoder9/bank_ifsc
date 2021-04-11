@@ -1,4 +1,7 @@
-
+if ("serviceWorker" in navigator) {
+  // register service worker
+  navigator.serviceWorker.register("service-worker.js");
+}
 		jQuery(document).ready(function($) {
 			$("#ifsc_box").click(function() {
 				$("#employee_details").css("display","none");
