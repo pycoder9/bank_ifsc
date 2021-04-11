@@ -1,6 +1,6 @@
 {
-  "name": "BANK IFSC",
-  "short_name": "bank ifsc",
+  "name": "Stick-it Notes by Tharun",
+  "short_name": "Stick-it",
   "start_url": "index.html",
   "scope": "./",
   "icons": [
